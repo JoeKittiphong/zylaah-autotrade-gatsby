@@ -1,0 +1,15 @@
+.follow{
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 20px;
+    height: 20px;
+}
+
+.link{
+    margin: 0;
+    padding: 0;
+}

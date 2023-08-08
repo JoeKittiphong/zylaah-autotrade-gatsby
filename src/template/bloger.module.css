@@ -1,0 +1,35 @@
+.blog{
+    margin-top: 20px;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    color: aliceblue;
+    background: #222831;
+    >h1{
+        padding: 3px;
+    }
+}
+
+.writen {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 0 10px;
+}
+
+.tag {
+    background: #222831;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.share{
+    position: fixed;
+    bottom: 0;
+}
+
