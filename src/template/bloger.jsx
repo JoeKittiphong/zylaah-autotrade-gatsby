@@ -2,12 +2,13 @@ import React from 'react'
 import { graphql } from "gatsby"
 import * as style from "./bloger.module.css"
 import Bubble from '../components/bubble/Bubble'
+import Header from '../components/header/Header'
 
 function bloger({ data }) {
     const { html, frontmatter } = data.markdownRemark
     return (
-
         <div className={style.blog}>
+            <Header title={frontmatter.title} ></Header>
             <Bubble pageURL={`https://www.zylaah-autotrade.com${frontmatter.path}`} ></Bubble>
             <div className={style.title}>
                 <h1>

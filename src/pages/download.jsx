@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../components/header/Header'
 
 function download() {
   return (
-    <div>download</div>
+    <div>
+      <Header title={"download EA"} ></Header>
+      download</div>
   )
 }
 

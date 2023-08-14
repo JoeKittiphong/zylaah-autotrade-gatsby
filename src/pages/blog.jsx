@@ -1,10 +1,12 @@
 import React from 'react'
 import { graphql, Link } from "gatsby"
 import * as style from "./blog.module.css"
+import Header from '../components/header/Header'
 
 function blog({ data: { allMarkdownRemark } }) {
     return (
         <div className={style.blogmain}>
+            <Header title={"บทความ"} ></Header>
             {allMarkdownRemark.nodes.map(({ id, frontmatter }) => {
                 return (
                     <Link className={style.link} to={frontmatter.path} key={id}>
@@ -38,6 +40,7 @@ export const query = graphql`
                     cover
                     writer
                     date
+                    tag
                 }
             }
         }

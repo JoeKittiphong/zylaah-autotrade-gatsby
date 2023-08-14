@@ -1,12 +1,13 @@
 import React from 'react'
-
 import Bubble from '../components/bubble/Bubble'
+import Header from '../components/header/Header'
 
 function index() {
   return (
     <div>
-        <Bubble></Bubble>
-        
+      <Header title={"หน้าแรก"} ></Header>
+      <Bubble></Bubble>
+
     </div>
   )
 }

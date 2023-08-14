@@ -10,28 +10,30 @@ function Navbar() {
     const logoStyle = `${style.logo} ${style.center}`
 
     return (
-        <div className={navStyle}>
-            <Link to='/' className={logoStyle}>
-                <img className={style.image} src={logo} alt="zylaah autotrade" />
-            </Link>
+        <div className={style.outline}>
+            <div className={navStyle}>
+                <Link to='/' className={logoStyle}>
+                    <img className={style.image} src={logo} alt="zylaah autotrade" />
+                </Link>
 
-            <div className={style.navigate}>
-                <Link className={linkStyle}
-                    to='/'>
-                    หน้าแรก
-                </Link>
-                <Link className={linkStyle}
-                    to='/blog'>
-                    บทความ
-                </Link>
-                <Link className={linkStyle}
-                    to='/download'>
-                    ดาวน์โหลด EA
-                </Link>
-                <Link className={linkStyle}
-                    to='/about'>
-                    เกี่ยวกับเรา
-                </Link>
+                <div className={style.navigate}>
+                    <Link className={linkStyle}
+                        to='/'>
+                        หน้าแรก
+                    </Link>
+                    <Link className={linkStyle}
+                        to='/blog'>
+                        บทความ
+                    </Link>
+                    <Link className={linkStyle}
+                        to='/download'>
+                        ดาวน์โหลด EA
+                    </Link>
+                    <Link className={linkStyle}
+                        to='/about'>
+                        เกี่ยวกับเรา
+                    </Link>
+                </div>
             </div>
         </div>
     )

@@ -15,14 +15,15 @@
     background: #F74C4C;
     margin: 5px 0;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .blog {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-gap: 10px;
-    justify-items: center;
+    grid-gap: 20px;
+    /* justify-items: center; */
 }
 
 .cover{
@@ -49,13 +50,13 @@
 }
 
 @media only screen and (max-width : 430px){
+    .link{
+        width: 350px;
+    }
     .blog {
-        width: 100%;
+        width: 390px;
         display: grid;
-        grid-template-columns: 1fr 4fr;
-        grid-gap: 10px;
-        justify-items: center;
-        margin: 5px 0;
+        grid-template-columns: 1fr 5fr;
     }
     .image{
         width: 100px;
@@ -73,17 +74,17 @@
 }
 
 @media only screen and (min-width : 431px){
+    .link{
+        width: 600px;
+    }
     .blog {
-        width: 100%;
+        height: 150px;
         display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-gap: 10px;
-        justify-items: center;
-        margin: 5px 0;
+        grid-template-columns: 1fr 6fr;
     }
     .image{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     .content{
         width: 70%;
